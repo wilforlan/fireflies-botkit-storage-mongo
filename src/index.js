@@ -75,6 +75,9 @@ function getStorage(db, zone) {
         },
         update: function(finder, data, cb){
             return table.update(finder, data, cb);
+        },
+        count: function(opts, cb){
+            return table.count(opts, cb);
         }
     };
 }
