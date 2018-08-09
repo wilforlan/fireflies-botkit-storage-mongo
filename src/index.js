@@ -72,6 +72,9 @@ function getStorage(db, zone) {
         },
         create: function(data, cb){
             table.insert(data, cb)
+        },
+        update: function(finder, data, cb){
+            return table.update(finder, data, cb);
         }
     };
 }
